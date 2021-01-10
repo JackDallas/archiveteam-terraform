@@ -1,6 +1,8 @@
 ## archiveteam-infra
 
-Ready to save the web, one archiveteam project at a time? Then this project is for you!
+Archive Team infra but focused on individual projects
+
+forked from https://gitlab.com/diggan/archiveteam-infra
 
 ## Installation
 
@@ -10,13 +12,9 @@ Upload your ssh key to DigitalOcean. You can do that here https://cloud.digitalo
 
 Copy `terraform.tfvars.dist` to `terraform.tfvars`, filling out the wanted values.
 
-Now run `terraform apply`. Once it's done, you're helping! Congratz.
+The `warrior_project` var needs to be the name of a docker container on `atdr.meo.ws/archiveteam/$warrior_project`
 
-## TODO
-
-> What is missing, what would make this project better?
-
-- [ ] Integrated dashboard with Grafana
-- [ ] Federated dashboard with prometheus, integrating many deployments into one dashboard
+Run `terraform init`
+Now run `terraform apply`.
 
 ### LICENSE: MIT (2018) DIGGAN
